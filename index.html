@@ -51,19 +51,33 @@
               <div class="form-group">
                 <label for="select" class="col-lg-2 control-label">Selects</label>
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-md-offset-2">
                     <select class="form-control" id="select-1">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
+                      <option>May select</option>
+                      <option>Must select</option>
+                      <option>Terminate if select</option>
+                    </select>
+                    <select class="form-control" id="select-1">
+                      <option>May select</option>
+                      <option>Must select</option>
+                      <option>Terminate if select</option>
+                    </select>
+                    <select class="form-control" id="select-1">
+                      <option>May select</option>
+                      <option>Must select</option>
+                      <option>Terminate if select</option>
                     </select>
                   </div>
-                  <div class="col-md-4">
-                    <select class="form-control col-md-4" id="select-2">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                    </select>
+                  <div class="form-group col-md-5">
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control"  id="answerOne" placeholder="Answer">
+                    </div>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="answerTwo" placeholder="Answer">
+                    </div>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="answerThree" placeholder="Answer">
+                    </div>
                   </div>
                 </div>
 
@@ -71,7 +85,7 @@
               <div class="form-group">
                 <div class="col-lg-10 col-lg-offset-2">
                   <button id="cancel" type="reset" class="btn btn-default">Cancel</button>
-                  <button id="add" type="submit" class="btn btn-primary">Add</button>
+                  <button id="add" type="submit" class="btn btn-primary">Save</button>
                 </div>
                 </div>
             </fieldset>
@@ -87,28 +101,28 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-8 col-md-offset-2">
           <div class="row">
-            <a id="new-question" href="#" class="btn btn-info" style="float: right">New</a>
+            <a id="new-question" href="#" class="btn btn-info" style="float: right">New Question</a>
           </div>
           <br>
           <div class="row">
             <ul id="questions-list" class="list-group" style="border: 1px solid #4E493B">
-              <li class="list-group-item">
+              <li class="list-group-item editable">
                 <span class="badge pull-left col-xs-1">?</span>
-                  Cras justo odio
+                  <span style="padding-left:10px">Cras justo odio</span>
                 <span><a href="#" class="edit col-xs-offset-7">Edit</a></span>
                 <span class="delete glyphicon glyphicon-trash pull-right" aria-hidden="true"><a href="#"></a></span>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item editable">
                 <span class="badge pull-left col-xs-1">?</span>
-                  Dapibus ac facilisis in
+                <span style="padding-left:10px">Dapibus ac facilisis</span>
                 <span><a href="#" class="edit col-xs-offset-7">Edit</a></span>
                 <span class="delete glyphicon glyphicon-trash pull-right" aria-hidden="true"><a href="#"></a></span>
               </li>
-              <li class="list-group-item">
+              <li class="list-group-item editable">
                 <span class="badge pull-left col-xs-1">?</span>
-                  Morbi leo risus
+                <span style="padding-left:10px">Morbi leo risus</span>
                 <span><a href="#" class="edit col-xs-offset-7">Edit</a></span>
                 <span class="delete glyphicon glyphicon-trash pull-right" aria-hidden="true"><a href="#"></a></span>
               </li>

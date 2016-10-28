@@ -6,7 +6,7 @@
 
   function cancelAddEdit() {
       $("#add-edit").slideUp();
-      $("#new-text").val(" ");
+      $("#new-text").val("");
   }
 
   function addListItem() {
@@ -17,7 +17,7 @@
     '<span><a href="#" class="col-xs-offset-7">Edit</a></span>' +
     '<span class="delete glyphicon glyphicon-trash pull-right" aria-hidden="true"><a href="#"></a></span></li>');
     $("#add-edit").slideUp();
-    $("#new-text").val(" ");
+    $("#new-text").val("");
   }
 
   function removeListItem() {
@@ -25,8 +25,13 @@
   }
 
   function editQuestion() {
+    var text = $(this:first-child).val();
+
+    $('.editable').attr('contenteditable', 'true');
+    $('#new-text').append(text);
     newQuestion();
-    //get KU
+    $("new-text").val("")
+
   }
 
   $(document).ready(function() {
@@ -39,7 +44,7 @@
 
       $("#new-question").on('click', newQuestion);
 
-      $(".edit").on('click'), editQuestion);
+      $(".edit").on('click', editQuestion);
 
       $("#cancel").on('click', cancelAddEdit);
 
