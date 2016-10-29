@@ -1,0 +1,21 @@
+{
+  "name": "discuss.io-task",
+  "version": "1.0.0",
+  "description": "job-app-challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/careylamothe/discuss.ioTask.git"
+  },
+  "author": "carey lamothe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/careylamothe/discuss.ioTask/issues"
+  },
+  "homepage": "https://github.com/careylamothe/discuss.ioTask#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
